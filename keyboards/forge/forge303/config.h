@@ -22,7 +22,8 @@
 #define PRODUCT_ID      0x00E6 // 303
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    FORGE
-#define PRODUCT         FORGE303
+#define PRODUCT         FORGE M303
+#define DESCRIPTION     FORGE M303
 
 /* key matrix size */
 #define MATRIX_ROWS 3
@@ -47,6 +48,9 @@
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
+
+#define BOOTMAGIC_LITE_ROW 0
+#define BOOTMAGIC_LITE_COLUMN 0
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
@@ -75,7 +79,7 @@
     // The number of steps to increment the brightness by
     #define RGBLIGHT_VAL_STEP 10
     // The maximum brightness level
-    #define RGBLIGHT_LIMIT_VAL 170
+    #define RGBLIGHT_LIMIT_VAL 200
     // If defined, the RGB lighting will be switched off when the host goes to sleep
     #define RGBLIGHT_SLEEP
 
@@ -88,13 +92,17 @@
 
     // RGB MATRIX
     // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
-    #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 170
+    #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
     // Sets the default hue value, if none has been set (125 = Cyan)
     #define RGB_MATRIX_STARTUP_HUE 125
     // Sets the default mode, if none has been set
     #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_LEFT_RIGHT
     // Support reaction to keypresses
     #define RGB_MATRIX_KEYPRESSES
+    // turn off effects when suspended
+    #define RGB_DISABLE_WHEN_USB_SUSPENDED
+    // number of milliseconds to wait until rgb automatically turns off
+    #define RGB_DISABLE_TIMEOUT 5000
 
     // RGB MATRIX ANIMATIONS
     //#define DISABLE_RGB_MATRIX_SOLID_COLOR
@@ -111,8 +119,8 @@
     //#define DISABLE_RGB_MATRIX_CYCLE_ALL
     //#define DISABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
     //#define DISABLE_RGB_MATRIX_CYCLE_UP_DOWN
-    //#define DISABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
-    //#define DISABLE_RGB_MATRIX_CYCLE_OUT_IN
+    #define DISABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
+    #define DISABLE_RGB_MATRIX_CYCLE_OUT_IN
     #define DISABLE_RGB_MATRIX_CYCLE_OUT_IN_DUAL
     #define DISABLE_RGB_MATRIX_CYCLE_PINWHEEL
     #define DISABLE_RGB_MATRIX_CYCLE_SPIRAL
@@ -125,7 +133,7 @@
     //#define DISABLE_RGB_MATRIX_HUE_PENDULUM
     //#define DISABLE_RGB_MATRIX_HUE_WAVE
     //#define DISABLE_RGB_MATRIX_TYPING_HEATMAP
-    #define DISABLE_RGB_MATRIX_DIGITAL_RAIN
+    //#define DISABLE_RGB_MATRIX_DIGITAL_RAIN
     //#define DISABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
     //#define DISABLE_RGB_MATRIX_SOLID_REACTIVE
     #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE

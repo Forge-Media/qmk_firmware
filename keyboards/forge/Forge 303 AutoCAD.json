@@ -1,0 +1,68 @@
+{
+  "name": "FORGE M303",
+  "vendorProductId": 1179058406,
+  "macros": [
+    "{KC_T,KC_R}{KC_ENT}",
+    "{KC_E,KC_X}{KC_ENT}",
+    "m{KC_ENT}",
+    "{KC_P,KC_L}{KC_ENT}",
+    "{KC_B,KC_R,KC_E,KC_A,KC_K,KC_A}{KC_ENT}",
+    "s{KC_ENT}",
+    "{KC_D,KC_I}{KC_ENT}",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "layers": [
+    [
+      "MACRO00",
+      "MACRO01",
+      "MACRO02",
+      "MACRO03",
+      "MACRO04",
+      "MACRO05",
+      "MACRO06",
+      "LT(1,KC_ENT)",
+      "LT(2,KC_ESC)"
+    ],
+    [
+      "KC_MPRV",
+      "KC_MPLY",
+      "KC_MNXT",
+      "KC_VOLD",
+      "KC_MSTP",
+      "KC_VOLU",
+      "KC_MUTE",
+      "KC_TRNS",
+      "KC_MSEL"
+    ],
+    [
+      "RGB_VAI",
+      "RGB_HUI",
+      "RGB_SPI",
+      "RGB_VAD",
+      "RGB_HUD",
+      "RGB_SPD",
+      "RGB_TOG",
+      "RGB_MOD",
+      "KC_TRNS"
+    ],
+    [
+      "KC_NO",
+      "KC_NO",
+      "KC_NO",
+      "KC_NO",
+      "0x2b2a",
+      "KC_ENT",
+      "KC_NO",
+      "KC_NO",
+      "KC_NO"
+    ]
+  ]
+}

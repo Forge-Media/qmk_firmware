@@ -16,6 +16,7 @@
 #pragma once
 
 #include "quantum.h"
+#include "via.h"
 
 #define LAYOUT( \
     K00, K01, K02,      \

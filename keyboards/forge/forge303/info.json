@@ -1,5 +1,5 @@
 {
-    "keyboard_name": "FORGE 303",
+    "keyboard_name": "FORGE303",
     "url": "https://github.com/Forge-Media",
     "maintainer": "FugiTive",
     "width": 3,
@@ -16,8 +16,8 @@
                 {"label":"6","x":2, "y":1},
 
                 {"label":"7","x":0, "y":2},
-                {"label":"8","x":1, "y":2},
-                {"label":"MO1","x":2, "y":2}
+                {"label":"MO1","x":1, "y":2},
+                {"label":"MO2","x":2, "y":2}
             ]
         }
     }
